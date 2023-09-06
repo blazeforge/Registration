@@ -44,10 +44,11 @@
     <main>
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/formResponse" method="post">
             <ol>
-                <li>1</li>
+                <li class="act">1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
+                <li>5</li>
             </ol>
             <fieldset id="name">
                 <legend>Name</legend>
@@ -76,45 +77,75 @@
             <fieldset id="academics">
                 <legend>Academics</legend>
                 <div class="input-group">
-                    <input required="1" type="text" name="entry.298103571" class="input">
+                    <input required="1" type="text" name="entry.298103571" class="input" list="academicCourse">
                     <label class="user-label">Course</label>
                 </div>
+                <datalist id="academicCourse">
+                    <option value="B.Tech CSE"></option>
+                    <option value="BCA"></option>
+                    <option value="BSc. IT"></option>
+                    <option value="BSc. CS"></option>
+                    <option value="Diploma CSE"></option>
+                    <option value="BE"></option>
+                </datalist>
                 <div class="input-group">
                     <input required="1" type="number" min="1" max="8" name="entry.1239076490" class="input">
                     <label class="user-label">Semester</label>
                 </div>
                 <div class="input-group">
-                    <input required="1" type="text" name="entry.317261516" class="input">
+                    <input required="1" type="text" name="entry.317261516" class="input" list="collage">
                     <label class="user-label">Collage / School</label>
                 </div>
+                <datalist id="collage">
+                    <option value="Graphic Era University (GEU)"></option>
+                    <option value="Graphic Era Hill University,Deheradun (GEHU,DDN)"></option>
+                    <option value="Graphic Era Hill University,Bhimtal (GEHU,BMT)"></option>
+                    <option value="Graphic Era Hill University,Haldwani (GEHU,HLD)"></option>
+                    <option value="KIIT"></option>
+                </datalist>
             </fieldset>
 
             <fieldset id="course">
                 <legend>Select Course</legend>
-                <section>
-                    <img src="" alt="">
-                    <h2>C Language</h2>
-                </section>
+                <label for="C">
+                    <section>
+                        <img src="" alt="">
+                        <h2>C Language</h2>
+                    </section>
+                </label>
+                <input type="radio" name="entry.1754578745" id="C">
 
-                <section>
-                    <img src="" alt="">
-                    <h2>C Plus Plus</h2>
-                </section>
+                <label for="CPP">
+                    <section>
+                        <img src="" alt="">
+                        <h2>C Plus Plus</h2>
+                    </section>
+                </label>
+                <input type="radio" name="entry.1754578745" id="CPP">
 
-                <section>
-                    <img src="" alt="">
-                    <h2>Java</h2>
-                </section>
+                <label for="JAVA">
+                    <section>
+                        <img src="" alt="">
+                        <h2>Java</h2>
+                    </section>
+                </label>
+                <input type="radio" name="entry.1754578745" id="JAVA">
 
-                <section>
-                    <img src="" alt="">
-                    <h2>Python</h2>
-                </section>
+                <label for="PY">
+                    <section>
+                        <img src="" alt="">
+                        <h2>Python</h2>
+                    </section>
+                </label>
+                <input type="radio" name="entry.1754578745" id="PY">
 
-                <section>
-                    <img src="" alt="">
-                    <h2>DSA</h2>
-                </section>
+                <label for="DSA">
+                    <section>
+                        <img src="" alt="">
+                        <h2>DSA</h2>
+                    </section>
+                </label>
+                <input type="radio" name="entry.1754578745" id="DSA">
             </fieldset>
 
             <fieldset id="payment">

@@ -74,28 +74,49 @@ ol{
     align-items: center;
     justify-content: space-around;
 }
+li{
+    list-style-type: none;
+    border: 1px solid #9e9e9e;
+    color: #9e9e9e;
+    border-radius: 50%;
+    padding-inline: 7px;
+    padding-block: 2px;
+}
+.fld{
+    color: white;
+    border: 1px solid white;
+}
+.act{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px aqua, 0px 0px 2px aqua inset;
+}
 
 fieldset{
-    margin-block: 30px;
+    margin-block: 25px;
+    border: none;
 }
 
 legend{
     color: aqua;
     margin: 0 auto;
     font-size: xx-large;
+    letter-spacing: 2px;
 }
 
 
 
 #contact,#academics,#course,#payment{
     display: none;
-
+ 
 }
 
 
 
 
-
+input[type=radio]{
+    display: none;
+}
 
 .input-group {
     margin: 25px auto;
