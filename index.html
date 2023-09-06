@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="BlazeForgeLogod.png" type="image/x-icon"  media="(prefers-color-scheme: dark)">
+    <link rel="shortcut icon" href="BlazeForgeLogol.png" type="image/x-icon"  media="(prefers-color-scheme: light)">
+
+    <title>Registration</title>
+</head>
+
+<!--https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/viewform
+    ?usp=pp_url&
+    entry.1738920122=referal&
+    entry.972484013=Kunal&
+    entry.1925815175=Upadhyay&
+    entry.386249082=abc@123&
+    entry.2105998683=1234567890&
+    entry.298103571=btch&
+    entry.1239076490=7&
+    entry.317261516=abz&
+    entry.1754578745=C+Language-->
+
+<body>
+    <header>
+        <div id="hdlogo">
+
+            <img src="BlazeForgeLogod.png" alt="BlazeForgeLogo">
+            <div>
+                <h1 style="color:white;letter-spacing: 1px;line-height:25px;">BLAZ</h2>
+                <h1 style="color:#ffde59">FORG</h2>
+            </div>
+                <h1 style="color:#ffde59;font-size:70px;padding-bottom:4px;">E</h2>
+        </div>
+        <div style="margin-right: 10px;line-height: 25px;">
+            <h2 style="color:#ffde59;letter-spacing: 1px;">Regist </h2>
+            <h2 style="color: white;letter-spacing: 1px;">Ration</h2>
+        </div>
+    </header>
+    
+    <main>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/formResponse" method="post">
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ol>
+            <fieldset id="name">
+                <legend>Name</legend>
+                <div class="input-group">
+                    <input required="1" type="text" minlength="1" name="entry.972484013" class="input">
+                    <label class="user-label">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input required="1" type="text" minlength="1" name="entry.1925815175" class="input">
+                    <label class="user-label">Last Name</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="contact">
+                <legend>Contact</legend>
+                <div class="input-group">
+                    <input required="1" type="email" name="entry.386249082" class="input">
+                    <label class="user-label">Email</label>
+                </div>
+                <div class="input-group">
+                    <input required="1" type="tel" minlength="10" maxlength="10" name="entry.2105998683" class="input">
+                    <label class="user-label">Ph. No.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="academics">
+                <legend>Academics</legend>
+                <div class="input-group">
+                    <input required="1" type="text" name="entry.298103571" class="input">
+                    <label class="user-label">Course</label>
+                </div>
+                <div class="input-group">
+                    <input required="1" type="number" min="1" max="8" name="entry.1239076490" class="input">
+                    <label class="user-label">Semester</label>
+                </div>
+                <div class="input-group">
+                    <input required="1" type="text" name="entry.317261516" class="input">
+                    <label class="user-label">Collage / School</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="course">
+                <legend>Select Course</legend>
+                <section>
+                    <img src="" alt="">
+                    <h2>C Language</h2>
+                </section>
+
+                <section>
+                    <img src="" alt="">
+                    <h2>C Plus Plus</h2>
+                </section>
+
+                <section>
+                    <img src="" alt="">
+                    <h2>Java</h2>
+                </section>
+
+                <section>
+                    <img src="" alt="">
+                    <h2>Python</h2>
+                </section>
+
+                <section>
+                    <img src="" alt="">
+                    <h2>DSA</h2>
+                </section>
+            </fieldset>
+
+            <fieldset id="payment">
+                <legend>Payment</legend>
+                <img src="" alt="Payment-QR">
+                <input type="file" name="" id="" required="1">
+            </fieldset>
+
+            <div class="btn">
+                <button disabled="1"  onclick="prv()" id="pv">Previous</button>
+                <button  onclick="nxt()" id="nx">Next</button>
+                <button type="submit" style="display: none;" id="sub">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer style="background-color: #03112b; text-align: center; color: white; padding-block: 7px; position: fixed; bottom: 0; width: 100%;">
+        #DEVELOPED IN INDIA
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
