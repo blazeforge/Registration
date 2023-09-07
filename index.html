@@ -24,6 +24,11 @@
     entry.317261516=abz&
     entry.1754578745=C+Language-->
 
+<script>
+    var subbmited=false;
+</script>
+<iframe src="" frameborder="0" name="rgstrd" id="rgstrd" style="display: none;" onload="if(subbmited){window.location='End.html';}"></iframe>
+
 <body>
     <header>
         <div id="hdlogo">
@@ -42,7 +47,7 @@
     </header>
     
     <main>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/formResponse" method="post">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/formResponse" method="post" target="rgstrd" onsubmit="subbmited=true">
             <ol>
                 <li class="act">1</li>
                 <li>2</li>
@@ -105,59 +110,50 @@
                 </datalist>
             </fieldset>
 
-            <fieldset id="course">
+            <fieldset id="course"
+            >
                 <legend>Select Course</legend>
-                <label for="C">
-                    <section>
-                        <img src="" alt="">
-                        <h2>C Language</h2>
-                    </section>
-                </label>
-                <input type="radio" name="entry.1754578745" id="C">
+                <section >
+                    
+                    <input type="radio" name="entry.1754578745" id="C" value="C Language">
+                    <label for="C">
+                            <img src="Programming Language/c.PNG" alt="c">
+                    </label>
+                    
+                    <input type="radio" name="entry.1754578745" id="CPP" value="C Plus Plus">
+                    <label for="CPP">
+                            <img src="Programming Language/cpp.png" alt="cpp">
+                    </label>
 
-                <label for="CPP">
-                    <section>
-                        <img src="" alt="">
-                        <h2>C Plus Plus</h2>
-                    </section>
-                </label>
-                <input type="radio" name="entry.1754578745" id="CPP">
+                    <input type="radio" name="entry.1754578745" id="JAVA" value="Java">
+                    <label for="JAVA">
+                            <img src="Programming Language/java.png" alt="java">
+                    </label>
 
-                <label for="JAVA">
-                    <section>
-                        <img src="" alt="">
-                        <h2>Java</h2>
-                    </section>
-                </label>
-                <input type="radio" name="entry.1754578745" id="JAVA">
-
-                <label for="PY">
-                    <section>
-                        <img src="" alt="">
-                        <h2>Python</h2>
-                    </section>
-                </label>
-                <input type="radio" name="entry.1754578745" id="PY">
-
-                <label for="DSA">
-                    <section>
-                        <img src="" alt="">
-                        <h2>DSA</h2>
-                    </section>
-                </label>
-                <input type="radio" name="entry.1754578745" id="DSA">
+                    <input type="radio" name="entry.1754578745" id="PY" value="Python">
+                    <label for="PY">
+                            <img src="Programming Language/python.png" alt="Py">
+                    </label>
+                    
+                    <input type="radio" name="entry.1754578745" id="DSA" value="DSA">
+                    <label for="DSA">
+                            <img src="Programming Language/dsa.png" alt="DSA">
+                    </label>
+                </section>
+                
             </fieldset>
 
             <fieldset id="payment">
                 <legend>Payment</legend>
-                <img src="" alt="Payment-QR">
-                <input type="file" name="" id="" required="1">
+                <img src="QR.png" alt="Payment-QR" height="220" width="220" style="display: block;margin: 15px auto;">
+                <h2 style="text-align: center; color: aqua;">Pay 1099</h2>
+                <p>*</p>
             </fieldset>
 
             <div class="btn">
-                <button disabled="1"  onclick="prv()" id="pv">Previous</button>
-                <button  onclick="nxt()" id="nx">Next</button>
-                <button type="submit" style="display: none;" id="sub">Submit</button>
+                <button disabled="1"  onclick="prv()" id="pv" type="button"><img src="nxpr/icons8-back-96.png" alt="" height="15" width="15"> Previous</button>
+                <button  onclick="nxt()" id="nx" type="button">Next <img src="nxpr/icons8-forward-96.png" alt="" width="15" height="15"></button>
+                <button type="submit" style="display: none;" id="sub"><img src="nxpr/icons8-back-96.png" alt="" height="15" width="15"> Submit <img src="nxpr/icons8-forward-96.png" alt="" width="15" height="15"></button>
             </div>
         </form>
     </main>

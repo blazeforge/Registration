@@ -32,7 +32,7 @@ function nxt() {
         co.style.display = "none";
 
         ne.style.display = "none";
-        sub.style.display="block";
+        sub.style.display="flex";
 
         lst[3].classList.remove("act");
         lst[3].classList.add("fld");
