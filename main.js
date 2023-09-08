@@ -2,6 +2,11 @@ var n=document.getElementById("name"),c=document.getElementById("contact"),a=doc
 var inp=document.getElementsByTagName("input"),lst=document.getElementsByTagName("li");
 var pr=document.getElementById("pv"),ne=document.getElementById("nx"),sub=document.getElementById("sub");
 console.log("Kunal Upadhyay");
+
+const ref = window.location.search;
+const urlp = new URLSearchParams(ref);
+document.getElementsByName("entry.1738920122")[0].value=urlp.get('ref');
+
 function nxt() {
     if (window.getComputedStyle(n,null).display == "block" && inp[0].checkValidity() && inp[1].checkValidity()) {
         c.style.display = "block";
@@ -71,3 +76,4 @@ function prv() {
         lst[3].classList.add("act");
     }
 }
+
