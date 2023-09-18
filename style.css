@@ -236,6 +236,11 @@ button:not(:disabled):hover img{
         font-size:large ;
         line-height: normal;
     }
+    body{
+        background: url("BGP.gif");
+        background-position: 0px 10vh;
+        background-size: cover;
+    }
     form{
       width: 80%;
     }

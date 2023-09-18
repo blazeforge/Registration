@@ -8,7 +8,7 @@ const urlp = new URLSearchParams(ref);
 document.getElementsByName("entry.1738920122")[0].value=urlp.get('ref');
 
 function nxt() {
-    if (window.getComputedStyle(n,null).display == "block" && inp[0].checkValidity() && inp[1].checkValidity()) {
+    if (window.getComputedStyle(n,null).display == "block" && inp[1].checkValidity() && inp[2].checkValidity()) {
         c.style.display = "block";
         n.style.display = "none";
         pr.disabled=false;
@@ -17,14 +17,14 @@ function nxt() {
         lst[0].classList.add("fld");
         lst[1].classList.add("act");
     }
-    else if (window.getComputedStyle(c,null).display == "block" && inp[2].checkValidity() && inp[3].checkValidity()){
+    else if (window.getComputedStyle(c,null).display == "block" && inp[3].checkValidity() && inp[4].checkValidity()){
         a.style.display = "block";
         c.style.display = "none";
         lst[1].classList.remove("act");
         lst[1].classList.add("fld");
         lst[2].classList.add("act");
     }
-    else if (window.getComputedStyle(a,null).display == "block" && inp[4].checkValidity() && inp[5].checkValidity() && inp[6].checkValidity()){
+    else if (window.getComputedStyle(a,null).display == "block" && inp[5].checkValidity() && inp[6].checkValidity() && inp[7].checkValidity()){
         co.style.display = "block";
         a.style.display = "none";
 
@@ -69,11 +69,10 @@ function prv() {
         co.style.display = "block";
         p.style.display = "none";
 
-        ne.style.display = "block";
+        ne.style.display = "flex";
         sub.style.display="none";
 
         lst[4].classList.remove("act");
         lst[3].classList.add("act");
     }
 }
-
