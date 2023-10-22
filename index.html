@@ -1,169 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="shortcut icon" href="BlazeForgeLogod.png" type="image/x-icon"  media="(prefers-color-scheme: dark)">
-    <link rel="shortcut icon" href="BlazeForgeLogol.png" type="image/x-icon"  media="(prefers-color-scheme: light)">
-
-    <title>Registration</title>
+    <title>Forbidden</title>
+    <link rel="stylesheet" href="403-style.css">
 </head>
-
-<!--https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/viewform
-    ?usp=pp_url&
-    entry.1738920122=referal&
-    entry.972484013=Kunal&
-    entry.1925815175=Upadhyay&
-    entry.386249082=abc@123&
-    entry.2105998683=1234567890&
-    entry.298103571=btch&
-    entry.1239076490=7&
-    entry.317261516=abz&
-    entry.1754578745=C+Language-->
-
-
-<script>
-    var subbmited=false;
-</script>
-<iframe src="" frameborder="0" name="rgstrd" id="rgstrd" style="display: none;" onload="if(subbmited){window.location='End.html';}"></iframe>
-
 <body>
-    <header>
-        <div id="hdlogo">
-
-            <img src="BlazeForgeLogod.png" alt="BlazeForgeLogo">
-            <div>
-                <h1 style="color:white;letter-spacing: 1px;line-height:25px;">BLAZ</h2>
-                <h1 style="color:#ffde59">FORG</h2>
-            </div>
-                <h1 style="color:#ffde59;font-size:70px;padding-bottom:4px;">E</h2>
-        </div>
-        <div style="margin-right: 10px;line-height: 25px;">
-            <h2 style="color:#ffde59;letter-spacing: 1px;">Regist </h2>
-            <h2 style="color: white;letter-spacing: 1px;">Ration</h2>
-        </div>
-    </header>
-    
-    <main>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSekWcEjY0Rm7vKUxkmJ72uJCeLUJUqGRYnTpVZGrvKuCr3hBw/formResponse" method="post" target="rgstrd" onsubmit="subbmited=true">
-            <ol>
-                <li class="act">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ol>
-            <input type="text" name="entry.1738920122" style="display: none;">
-            <fieldset id="name">
-                <legend>Name</legend>
-                <div class="input-group">
-                    <input required="1" type="text" minlength="1" name="entry.972484013" class="input">
-                    <label class="user-label">First Name</label>
-                </div>
-                <div class="input-group">
-                    <input required="1" type="text" minlength="1" name="entry.1925815175" class="input">
-                    <label class="user-label">Last Name</label>
-                </div>
-            </fieldset>
-
-            <fieldset id="contact">
-                <legend>Contact</legend>
-                <div class="input-group">
-                    <input required="1" type="email" name="entry.386249082" class="input">
-                    <label class="user-label">Email</label>
-                </div>
-                <div class="input-group">
-                    <input required="1" type="tel" minlength="10" maxlength="10" name="entry.2105998683" class="input">
-                    <label class="user-label">Ph. No.</label>
-                </div>
-            </fieldset>
-
-            <fieldset id="academics">
-                <legend>Academics</legend>
-                <div class="input-group">
-                    <input required="1" type="text" name="entry.298103571" class="input" list="academicCourse">
-                    <label class="user-label">Course</label>
-                </div>
-                <datalist id="academicCourse">
-                    <option value="B.Tech CSE"></option>
-                    <option value="BCA"></option>
-                    <option value="BSc. IT"></option>
-                    <option value="BSc. CS"></option>
-                    <option value="Diploma CSE"></option>
-                    <option value="BE"></option>
-                </datalist>
-                <div class="input-group">
-                    <input required="1" type="number" min="1" max="8" name="entry.1239076490" class="input">
-                    <label class="user-label">Semester</label>
-                </div>
-                <div class="input-group">
-                    <input required="1" type="text" name="entry.317261516" class="input" list="collage">
-                    <label class="user-label">Collage / School</label>
-                </div>
-                <datalist id="collage">
-                    <option value="Graphic Era University (GEU)"></option>
-                    <option value="Graphic Era Hill University,Deheradun (GEHU,DDN)"></option>
-                    <option value="Graphic Era Hill University,Bhimtal (GEHU,BMT)"></option>
-                    <option value="Graphic Era Hill University,Haldwani (GEHU,HLD)"></option>
-                    <option value="Kalinga Institute of Industrial Technology (KIIT)"></option>
-                    <option value="CT Group of Institutions"></option>
-                </datalist>
-            </fieldset>
-
-            <fieldset id="course"
-            >
-                <legend>Select Course</legend>
-                <section >
-                    
-                    <input type="radio" name="entry.1754578745" id="C" value="C Language">
-                    <label for="C">
-                            <img src="Programming Language/c.PNG" alt="c">
-                    </label>
-                    
-                    <input type="radio" name="entry.1754578745" id="CPP" value="C Plus Plus">
-                    <label for="CPP">
-                            <img src="Programming Language/cpp.png" alt="cpp">
-                    </label>
-
-                    <input type="radio" name="entry.1754578745" id="JAVA" value="Java">
-                    <label for="JAVA">
-                            <img src="Programming Language/java.png" alt="java">
-                    </label>
-
-                    <input type="radio" name="entry.1754578745" id="PY" value="Python">
-                    <label for="PY">
-                            <img src="Programming Language/python.png" alt="Py">
-                    </label>
-                    
-                    <input type="radio" name="entry.1754578745" id="DSA" value="DSA">
-                    <label for="DSA">
-                            <img src="Programming Language/dsa.png" alt="DSA">
-                    </label>
-                </section>
-                
-            </fieldset>
-
-            <fieldset id="payment">
-                <legend>Payment</legend>
-                <img src="QR.png" alt="Payment-QR" height="220" width="220" style="display: block;margin: 15px auto;">
-                <h2 style="text-align: center; color: aqua;">Pay 1099</h2>
-                <p style="text-align: center; color: aqua;">scan using any UPI payment app</p>
-            </fieldset>
-
-            <div class="btn">
-                <button disabled="1"  onclick="prv()" id="pv" type="button"><img src="nxpr/icons8-back-96.png" alt="" height="15" width="15"> Previous</button>
-                <button  onclick="nxt()" id="nx" type="button">Next <img src="nxpr/icons8-forward-96.png" alt="" width="15" height="15"></button>
-                <button type="submit" onclick="this.innerText='Wait'" ondblclick="this.disabled=true" style="display: none;" id="sub"><img src="nxpr/icons8-back-96.png" alt="" height="15" width="15" > Submit <img src="nxpr/icons8-forward-96.png" alt="" width="15" height="15"></button>
-            </div>
-        </form>
-    </main>
-
-    <footer style="background-color: #03112b; text-align: center; color: white; padding-block: 7px; position: fixed; bottom: 0; width: 100%;">
-        #DEVELOPED IN INDIA
-    </footer>
+    <div>
+        <h1 data-text="403">403</h1>
+        <h2>Currently not accepting registrations</h2>
+        <p>
+            The registration process will restart. Till then kindly subscribe for the updates by clicking on <b>STAY TUNED</b> below.
+        </p>
+        <p id="timer"></p>
+        <a href="a">STAY TUNED</a>
+    </div>
 </body>
-<script src="main.js"></script>
+<script src="timer.js"></script>
+
 </html>
