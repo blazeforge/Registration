@@ -33,7 +33,7 @@ function nxt() {
         lst[3].classList.add("act");
     }
     else if (window.getComputedStyle(co,null).display == "block"){
-        
+        console.log(urlp.get('ref'));
         if(urlp.get('ref')=='PK2024'){
             document.getElementById('pay').innerHTML='<del>1599</del> <ins>1099</ins>';
         }
